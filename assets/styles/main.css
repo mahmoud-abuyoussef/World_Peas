@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --green: #426b1f;
+  --gray: #6d6d6d;
+  --bg: #fafaf5;
+  --white: white;
+  --black: black;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}

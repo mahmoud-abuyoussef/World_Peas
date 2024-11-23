@@ -30,7 +30,6 @@ header {
   top: 0;
   padding: 20px;
   background-color: var(--white);
-  border-bottom: 1px solid black;
 }
 header .container {
   display: flex;
