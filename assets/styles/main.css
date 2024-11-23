@@ -25,6 +25,9 @@ a {
 ul {
   list-style: none;
 }
+img {
+  max-width: 100%;
+}
 .hero {
   padding: 100px 0;
   text-align: center;
@@ -48,4 +51,23 @@ ul {
   color: var(--white);
   background-color: var(--green);
   border-radius: 8px;
+}
+.some-vegetables {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.some-vegetables .vegetables {
+  margin-left: 40px;
+}
+.some-vegetables .banger-image {
+  width: 740px;
+  height: 480px;
+}
+.some-vegetables .banger-image figcaption {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: -1%;
 }
