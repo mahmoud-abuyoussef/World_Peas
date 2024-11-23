@@ -25,3 +25,27 @@ a {
 ul {
   list-style: none;
 }
+.hero {
+  padding: 100px 0;
+  text-align: center;
+}
+.hero h1 {
+  font-family: "Newsreader", serif;
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  font-weight: normal;
+}
+.hero .our-shop-btn {
+  display: block;
+  width: fit-content;
+  padding: 10px;
+  margin: 54px auto;
+  line-height: 130%;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 8px;
+}
