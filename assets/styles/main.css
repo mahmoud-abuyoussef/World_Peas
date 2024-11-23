@@ -71,3 +71,30 @@ img {
   line-height: 160%;
   letter-spacing: -1%;
 }
+.what-we-believe {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-family: "Inter", sans-serif;
+}
+.what-we-believe .container {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.what-we-believe h2 {
+  width: 181px;
+  font-size: 14px;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+}
+.what-we-believe article {
+  width: 822px;
+  font-size: 20px;
+}
+.what-we-believe article p {
+  line-height: 160%;
+}
