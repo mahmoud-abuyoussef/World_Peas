@@ -14,6 +14,16 @@
   padding: 0 15px;
   margin: auto;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
@@ -52,7 +62,7 @@ img {
   background-color: var(--green);
   border-radius: 8px;
 }
-.some-vegetables {
+.some-vegetables .container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -62,8 +72,7 @@ img {
   margin-left: 40px;
 }
 .some-vegetables .banger-image {
-  width: 740px;
-  height: 480px;
+  width: 50%;
 }
 .some-vegetables .banger-image figcaption {
   font-family: "Inter", sans-serif;
