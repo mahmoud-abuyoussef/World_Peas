@@ -10,6 +10,9 @@
   --white: white;
   --black: black;
 }
+body {
+  font-family: "Inter", sans-serif;
+}
 .container {
   padding: 0 15px;
   margin: auto;
@@ -44,10 +47,14 @@ img {
 }
 .hero h1 {
   font-family: "Newsreader", serif;
-  font-size: 64px;
   line-height: 120%;
   letter-spacing: -2%;
   font-weight: normal;
+}
+@media (min-width: 992px) {
+  .hero h1 {
+    font-size: 64px;
+  }
 }
 .hero .our-shop-btn {
   display: block;
@@ -57,25 +64,23 @@ img {
   line-height: 130%;
   font-size: 20px;
   font-weight: bold;
-  font-family: "Inter", sans-serif;
   color: var(--white);
   background-color: var(--green);
   border-radius: 8px;
 }
-.some-vegetables .container {
+.newstand .container {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
-.some-vegetables .vegetables {
-  margin-left: 40px;
+@media (min-width: 992px) {
+  .newstand .banger-image {
+    width: 50%;
+  }
 }
-.some-vegetables .banger-image {
-  width: 50%;
-}
-.some-vegetables .banger-image figcaption {
-  font-family: "Inter", sans-serif;
+.newstand .banger-image figcaption {
   font-size: 14px;
   line-height: 160%;
   letter-spacing: -1%;
@@ -83,11 +88,10 @@ img {
 .what-we-believe {
   padding-top: 60px;
   padding-bottom: 20px;
-  font-family: "Inter", sans-serif;
 }
 .what-we-believe .container {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 @media (max-width: 767px) {
   .container {
@@ -95,13 +99,14 @@ img {
   }
 }
 .what-we-believe h2 {
-  width: 181px;
+  flex-grow: 1;
+  margin-bottom: 30px;
   font-size: 14px;
   letter-spacing: 4%;
   text-transform: uppercase;
 }
 .what-we-believe article {
-  width: 822px;
+  flex-basis: calc(100% - 200px);
   font-size: 20px;
 }
 .what-we-believe article p {
