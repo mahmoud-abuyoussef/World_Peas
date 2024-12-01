@@ -32,12 +32,6 @@ body {
     width: 1170px;
   }
 }
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-}
 img {
   max-width: 100%;
 }
