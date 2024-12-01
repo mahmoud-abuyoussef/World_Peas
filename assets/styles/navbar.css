@@ -36,6 +36,7 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
+
 header .logo a {
   font-family: "Newsreader", serif;
   color: var(--green);
@@ -43,6 +44,11 @@ header .logo a {
 }
 header nav ul {
   display: flex;
+}
+@media (max-width: 991px) {
+  header nav {
+    display: none;
+  }
 }
 header nav ul li a {
   padding: 10px;
