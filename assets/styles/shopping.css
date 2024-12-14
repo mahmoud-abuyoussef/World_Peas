@@ -74,6 +74,12 @@ img {
   align-items: center;
   gap: 20px;
 }
+.basket .product-list .product .product-details .product-image {
+  height: 100%;
+}
+.basket .product-list .product .product-details img {
+  height: 100%;
+}
 .basket .product-info .weight {
   margin-top: 10px;
 }

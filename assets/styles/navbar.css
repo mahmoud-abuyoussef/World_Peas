@@ -14,16 +14,20 @@
   padding: 0 15px;
   margin: auto;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
-}
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
 }
 header {
   position: sticky;
@@ -33,25 +37,33 @@ header {
 }
 header .container {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-
 header .logo a {
+  text-decoration: none;
   font-family: "Newsreader", serif;
-  color: var(--green);
   font-size: 32px;
+  color: var(--green);
+}
+header nav {
+  position: relative;
+}
+header nav label img {
+  cursor: pointer;
+}
+header nav input {
+  appearance: none;
 }
 header nav ul {
-  display: flex;
-}
-@media (max-width: 991px) {
-  header nav {
-    display: none;
-  }
+  position: absolute;
+  right: 0;
+  list-style: none;
 }
 header nav ul li a {
   padding: 10px;
+  text-decoration: none;
   line-height: 130%;
   font-size: 16px;
   font-family: "Inter", sans-serif;
@@ -61,4 +73,13 @@ header nav ul li .cart-btn {
   color: var(--white);
   background-color: var(--green);
   border-radius: 8px;
+}
+@media (min-width: 992px) {
+  header nav label,
+  header nav input {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+  }
 }
